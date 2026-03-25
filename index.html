@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đọc sách You Don't Know JS bằng tiếng Việt - Theo dõi tiến độ và lên kế hoạch đọc sách">
+    <meta name="keywords" content="JavaScript, YDKJS, You Don't Know JS, Vietnamese, Tiếng Việt, Học JavaScript">
+    <title>YDKJS Reader - You Don't Know JS Vietnamese</title>
+    
+    <!-- GitHub Pages SPA fix -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
