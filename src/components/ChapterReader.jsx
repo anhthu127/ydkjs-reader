@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { books } from '../data/books';
@@ -8,7 +8,6 @@ import './ChapterReader.css';
 
 function ChapterReader() {
   const { bookId, chapterId } = useParams();
-  const navigate = useNavigate();
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -108,10 +107,10 @@ function ChapterReader() {
         <ReactMarkdown 
           remarkPlugins={[remarkGfm]}
           components={{
-            img: ({node, ...props}) => (
+            img: ({...props}) => (
               <img {...props} loading="lazy" alt={props.alt || ''} />
             ),
-            a: ({node, ...props}) => (
+            a: ({...props}) => (
               <a {...props} target="_blank" rel="noopener noreferrer" />
             )
           }}

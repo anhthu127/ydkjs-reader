@@ -13,9 +13,12 @@ function ReadingPlanner() {
   useEffect(() => {
     const savedPlan = getReadingPlan();
     if (savedPlan) {
-      setPlan(savedPlan);
-      setDailyMinutes(savedPlan.dailyMinutes);
-      setStartDate(savedPlan.startDate);
+      const loadSavedPlan = () => {
+        setPlan(savedPlan);
+        setDailyMinutes(savedPlan.dailyMinutes);
+        setStartDate(savedPlan.startDate);
+      };
+      loadSavedPlan();
     }
   }, []);
 
