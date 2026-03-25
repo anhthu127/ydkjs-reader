@@ -61,10 +61,10 @@ The deployment process takes a few minutes:
 Your website will be available at:
 
 ```
-https://<your-username>.github.io/You-Dont-Know-JS/
+https://anhthu127.github.io/ydkjs-reader/
 ```
 
-For example: `https://irenedo.github.io/You-Dont-Know-JS/`
+Note: The URL format is `https://<your-username>.github.io/<repository-name>/`
 
 ## Troubleshooting
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://irenedo.github.io/You-Dont-Know-JS",
+  "homepage": "https://anhthu127.github.io/ydkjs-reader",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
